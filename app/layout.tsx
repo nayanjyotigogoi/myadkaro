@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 
       // Dark mode specific favicon
       {
-        url: "/icon-dark-32x32-1.png",
+        url: "/favicon-32x32.png",
         sizes: "32x32",
         type: "image/png",
         media: "(prefers-color-scheme: dark)",
