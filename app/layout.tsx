@@ -21,29 +21,59 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "AdKaro — Advertising People Actually Notice",
+  title: "adKaro - Advertising People Actually Notice",
   description:
     "AdKaro is a local physical advertising platform that places clean, minimal displays in high-footfall real-world spaces where people spend time, are relaxed, and are present.",
   generator: "Anvaya Solution",
-  keywords: ["advertising", "local advertising", "physical advertising", "brand awareness", "attention marketing"],
+  keywords: [
+    "advertising",
+    "local advertising",
+    "physical advertising",
+    "brand awareness",
+    "attention marketing",
+  ],
+
   icons: {
     icon: [
+      // Standard favicons
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+
+      // Dark mode specific favicon
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
+        url: "/icon-dark-32x32-1.png",
+        sizes: "32x32",
+        type: "image/png",
         media: "(prefers-color-scheme: dark)",
       },
+    ],
+
+    apple: [
       {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
       },
     ],
-    apple: "/apple-icon.png",
+
+    other: [
+      {
+        rel: "android-chrome",
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "android-chrome",
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
   },
 }
+
 
 export default function RootLayout({
   children,
