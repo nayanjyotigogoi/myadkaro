@@ -9,8 +9,8 @@ const footerLinks = {
   ],
   connect: [
     { href: "/contact", label: "Contact" },
-    { href: "https://instagram.com/adkaro", label: "Instagram" },
-    { href: "https://linkedin.com/company/adkaro", label: "LinkedIn" },
+    { href: "https://www.instagram.com/adkaro.online", label: "Instagram" },
+    { href: "#", label: "+91 97073 85552" },
   ],
   legal: [
     { href: "/terms-and-conditions", label: "Terms & Conditions" },
